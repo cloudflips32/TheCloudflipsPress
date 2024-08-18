@@ -10,6 +10,10 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import {
+  User,
+  DoorOpen
+} from 'lucide-react'
 
 const Navbar = () => {
   return (
@@ -32,11 +36,13 @@ const Navbar = () => {
           <DropdownMenuLabel>My Account</DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
+            <User className="mr-2 h-4 w-4" />
             <Link href='/profile'>
               Profile
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
+            <DoorOpen className="mr-2 h-4 w-4" />
             <Link href='/auth'>
               Logout
             </Link>

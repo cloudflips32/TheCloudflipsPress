@@ -24,10 +24,9 @@ const Sidebar = () => {
     <>
       <Command className="bg-secondary rounded-none">
         <CommandInput placeholder="Type a command or search..." />
-        <CommandList>
+        <CommandList className="h-[100vh]">
 
           <CommandEmpty>No results found.</CommandEmpty>
-          
           <CommandGroup heading="Suggestions">
 
             <CommandItem>
